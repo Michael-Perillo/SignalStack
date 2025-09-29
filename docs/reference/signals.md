@@ -2,11 +2,13 @@
 
 ## Definition
 
-**Signals** are the delivered artifacts that you send to employers, collaborators or platforms: resumes, CVs, cover letters, portfolio pages, LinkedIn summaries and bios. They are composed from facts via playbooks and informed by narratives.
+**Signals** are the delivered artifacts that you send to employers, collaborators or platforms: resumes, CVs, cover letters, portfolio pages,
+LinkedIn summaries and bios. They are composed from facts via playbooks and informed by narratives.
 
 Common signal types include:
 
-- **Resume**: a one- or two-page document emphasising recent, relevant achievements. Should use clear sections, strong action verbs, quantified results and reverse-chronological order
+- **Resume**: a one- or two-page document emphasising recent, relevant achievements. Should use clear sections, strong action verbs,
+  quantified results and reverse-chronological order
 - **CV (Curriculum Vitae)**: a comprehensive record of your professional and academic history, often used in academia and research
 - **Portfolio Page**: a web page or PDF highlighting projects or case studies (links to narratives)
 - **Cover Letter or Intro Note**: a tailored letter explaining why you are a good fit for a role, referencing both facts and narratives
@@ -35,4 +37,5 @@ Common signal types include:
 
 ## Analogy
 
-In the garden & harvest analogy, **signals** are the **dishes served**. They are the beautifully plated meals prepared from your ingredients and recipes—resumes, CVs, cover letters and portfolio pages that nourish your audience.
+In the garden & harvest analogy, **signals** are the **dishes served**. They are the beautifully plated meals prepared from your ingredients
+and recipes—resumes, CVs, cover letters and portfolio pages that nourish your audience.

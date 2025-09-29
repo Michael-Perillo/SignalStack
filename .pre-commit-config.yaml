@@ -1,0 +1,30 @@
+repos:
+  - repo: local
+    hooks:
+      - id: typescript-check
+        name: TypeScript Check
+        entry: npm run typecheck
+        language: system
+        files: '\.(ts|tsx|js|jsx)$'
+        pass_filenames: false
+
+      - id: markdown-lint
+        name: Markdown Lint
+        entry: npm run lint:md
+        language: system
+        files: '\.md$'
+        pass_filenames: false
+
+      - id: link-check
+        name: Link Check
+        entry: npm run test:links
+        language: system
+        files: '\.md$'
+        pass_filenames: false
+
+      - id: build-check
+        name: Build Check
+        entry: npm run build
+        language: system
+        files: '(src/|docs/|docusaurus\.config\.ts|sidebars\.ts|package\.json)'
+        pass_filenames: false

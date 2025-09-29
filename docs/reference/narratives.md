@@ -2,18 +2,22 @@
 
 ## Definition
 
-**Narratives** provide interpretive context around your facts. They explain why a project mattered, how you approached challenges and what you learned. Narratives can take many forms:
+**Narratives** provide interpretive context around your facts. They explain why a project mattered, how you approached challenges and what you
+learned. Narratives can take many forms:
 
 - **STAR Stories** (Situation–Task–Action–Result) for interview preparation
 - **Case Studies** summarising major projects or leadership experiences
 - **Lessons Learned** essays reflecting on a degree program or certification
 - **Design Docs and Postmortems** capturing thought processes and trade-offs
 
-These narratives live alongside facts but are not meant to appear verbatim in a one-page resume. Instead, they inform and enrich your bullet points and portfolio pages.
+These narratives live alongside facts but are not meant to appear verbatim in a one-page resume. Instead, they inform and enrich your bullet
+points and portfolio pages.
 
 ## Education Example
 
-- **Narrative**: "During my senior year at XYZ University, I led a capstone project that designed a scalable chat application. Through weekly usability tests we discovered bottlenecks in our websocket implementation and eventually reduced latency by 50%. The experience taught me the value of iterative feedback and user-centred design."
+- **Narrative**: "During my senior year at XYZ University, I led a capstone project that designed a scalable chat application.
+  Through weekly usability tests we discovered bottlenecks in our websocket implementation and eventually reduced latency by 50%.
+  The experience taught me the value of iterative feedback and user-centred design."
 
 ## Best Practices
 
@@ -30,4 +34,5 @@ These narratives live alongside facts but are not meant to appear verbatim in a 
 
 ## Analogy
 
-In the garden & harvest analogy, **narratives** are the **soil and growth stories**—they nourish your seeds and record how your plants matured. Good **soil** *(context)* helps **seeds** *(facts)* flourish and ensures your harvest will be flavourful.
+In the garden & harvest analogy, **narratives** are the **soil and growth stories**—they nourish your seeds and record how your plants
+matured. Good **soil** *(context)* helps **seeds** *(facts)* flourish and ensures your harvest will be flavourful.

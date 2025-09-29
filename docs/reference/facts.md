@@ -2,7 +2,8 @@
 
 ## Definition
 
-**Facts** are the objective, canonical data about your professional life—jobs held, titles, dates, employers, education, certifications, skills and measurable achievements. They are collected and maintained without interpretation or filtering.
+**Facts** are the objective, canonical data about your professional life—jobs held, titles, dates, employers, education, certifications,
+skills and measurable achievements. They are collected and maintained without interpretation or filtering.
 
 Examples include:
 
@@ -28,4 +29,5 @@ Examples include:
 
 ## Analogy
 
-In our garden & harvest analogy, **facts** are the **seeds and plants**—the raw ingredients you grow over the course of your career. They need to be planted, labeled and cared for so they can later be combined into delicious dishes.
+In our garden & harvest analogy, **facts** are the **seeds and plants**—the raw ingredients you grow over the course of your career.
+They need to be planted, labeled and cared for so they can later be combined into delicious dishes.

@@ -25,4 +25,6 @@ Across all quadrants:
 
 ## Analogy
 
-Like a well-tended garden, your career data grows from **seeds** *(facts)* in **soil** *(narratives)*. **Recipes** *(playbooks)* tell you how to harvest and combine your ingredients, and **dishes** *(signals)* are what you serve to others. This matrix helps you navigate the journey from planting to plating.
+Like a well-tended garden, your career data grows from **seeds** *(facts)* in **soil** *(narratives)*.
+**Recipes** *(playbooks)* tell you how to harvest and combine your ingredients, and **dishes** *(signals)* are what you serve to others.
+This matrix helps you navigate the journey from planting to plating.

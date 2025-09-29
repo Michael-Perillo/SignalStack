@@ -11,7 +11,8 @@ A playbook may include:
 - **Metric Thresholds**: prioritise bullets where the impact is ≥ 20%
 - **Section Limits**: maximum 6 work experiences, 3 bullets each
 
-Playbooks also manage order (e.g. reverse-chronological for a resume, thematic for a portfolio) and adjust the presence of certain data (e.g. include GPA for internships but omit it for senior roles).
+Playbooks also manage order (e.g. reverse-chronological for a resume, thematic for a portfolio) and adjust the presence of certain data
+(e.g. include GPA for internships but omit it for senior roles).
 
 ## Education Example
 
@@ -33,4 +34,5 @@ Playbooks also manage order (e.g. reverse-chronological for a resume, thematic f
 
 ## Analogy
 
-In the garden & harvest analogy, **playbooks** are the **recipes**. They tell you which **seeds and plants** to pick, how to combine them and in what order—so you produce a dish tailored to your dinner guests.
+In the garden & harvest analogy, **playbooks** are the **recipes**. They tell you which **seeds and plants** to pick, how to combine them and
+in what order—so you produce a dish tailored to your dinner guests.

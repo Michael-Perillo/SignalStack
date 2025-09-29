@@ -2,9 +2,11 @@
 
 ## The SignalStack Mindset
 
-SignalStack encourages you to think systematically about your career data. Instead of scrambling to create a resume from scratch for each application, you maintain a rich repository of information that can be strategically deployed.
+SignalStack encourages you to think systematically about your career data. Instead of scrambling to create a resume from scratch for each
+application, you maintain a rich repository of information that can be strategically deployed.
 
 The core mindset shift is **separation of concerns**:
+
 - **Collection** is separate from **application**
 - **Objective data** is separate from **interpretive context**
 - **Your complete history** is separate from **what you choose to present**
