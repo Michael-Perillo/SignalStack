@@ -1,36 +1,20 @@
-# SignalStack Documentation
+# Welcome to SignalStack
 
-Welcome to SignalStack, a framework for managing career data across time.
+SignalStack is a framework for managing career data across time using a systematic four-quadrant approach.
 
-## Start Here
+Instead of flattening your rich professional history into a single static resume, SignalStack helps you maintain, organize, and strategically deploy your career information.
 
-- **[Overview](explanation/overview.md)** - Introduction to SignalStack concepts and the four-quadrant framework
+## Get Started
 
-## Documentation Structure
+**[📖 Read the Overview](explanation/overview.md)** to understand the core concepts and four-quadrant framework.
 
-This documentation follows the [Diátaxis framework](https://diataxis.fr/):
+## The Four Quadrants
 
-### 📖 Explanation
-*Understanding-oriented documentation*
-- **[Overview](explanation/overview.md)** - Core concepts and framework introduction
-- **[Using SignalStack](explanation/using-signalstack.md)** - Strategic guidance and high-level workflows
-
-### 📚 Reference
-*Information-oriented documentation*
-- **[The Matrix](reference/the-matrix.md)** - Detailed framework structure
-- **[Facts](reference/facts.md)** - Objective career data *(Seeds & Plants)*
-- **[Narratives](reference/narratives.md)** - Interpretive context *(Soil & Growth Stories)*
-- **[Playbooks](reference/playbooks.md)** - Tailoring rules *(Recipes)*
-- **[Signals](reference/signals.md)** - Final deliverables *(Dishes Served)*
-
-### 🛠️ How-to Guides
-*Problem-solving oriented*
-- **[How-to Guides](how-to/)** - Coming soon
-
-### 🎓 Tutorials
-*Learning-oriented*
-- **[Tutorials](tutorials/)** - Coming soon
+- **[Facts](reference/facts.md)** *(Seeds & Plants)*: Your objective career data
+- **[Narratives](reference/narratives.md)** *(Soil & Growth Stories)*: Context and stories
+- **[Playbooks](reference/playbooks.md)** *(Recipes)*: Rules for tailoring data
+- **[Signals](reference/signals.md)** *(Dishes Served)*: Final deliverables
 
 ---
 
-*SignalStack is inspired by the [Diátaxis framework](https://diataxis.fr/) for documentation.*
+*This documentation follows the [Diátaxis framework](https://diataxis.fr/) and is organized by purpose in the sidebar.*

@@ -6,7 +6,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'SignalStack',
-  tagline: 'A framework for managing career data across time',
+  tagline: 'Transform your career data into strategic career artifacts',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future

@@ -17,11 +17,21 @@ function HomepageHeader() {
           {siteConfig.title}
         </Heading>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
+        <p className="hero__subtitle" style={{fontSize: '1.1rem', marginTop: '1rem', opacity: 0.9}}>
+          Stop flattening your rich career history into static resumes.
+          Organize your professional data with Facts, Narratives, Playbooks, and Signals.
+        </p>
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
             to="/docs/explanation/overview">
-            Get Started with SignalStack
+            🚀 Get Started
+          </Link>
+          <Link
+            className="button button--outline button--secondary button--lg"
+            to="/docs/reference/the-matrix"
+            style={{marginLeft: '1rem'}}>
+            📊 Learn the Framework
           </Link>
         </div>
       </div>
@@ -30,11 +40,10 @@ function HomepageHeader() {
 }
 
 export default function Home(): ReactNode {
-  const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      title="Career Data Management Framework"
+      description="Transform your career data into strategic career artifacts using Facts, Narratives, Playbooks, and Signals.">
       <HomepageHeader />
       <main>
         <HomepageFeatures />

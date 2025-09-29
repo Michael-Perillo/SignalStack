@@ -11,32 +11,42 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
+    title: 'Facts (Seeds & Plants)',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Collect and maintain objective career data: jobs, achievements, skills,
+        and education. Your canonical source of truth that never gets overwritten.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'Narratives (Soil & Stories)',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Capture the context behind your achievements with STAR stories, case studies,
+        and reflections that enrich your facts with meaning.
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Playbooks (Recipes)',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Define rules for tailoring your data to specific goals. Codify your approach
+        to creating targeted resumes, CVs, and portfolios.
+      </>
+    ),
+  },
+  {
+    title: 'Signals (Dishes Served)',
+    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    description: (
+      <>
+        Generate polished deliverables: resumes, CVs, cover letters, and portfolio pages.
+        Your final artifacts, ready to present to the world.
       </>
     ),
   },
@@ -44,7 +54,7 @@ const FeatureList: FeatureItem[] = [
 
 function Feature({title, Svg, description}: FeatureItem) {
   return (
-    <div className={clsx('col col--4')}>
+    <div className={clsx('col col--6 col--lg--3')}>
       <div className="text--center">
         <Svg className={styles.featureSvg} role="img" />
       </div>

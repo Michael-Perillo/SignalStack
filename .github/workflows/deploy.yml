@@ -81,16 +81,3 @@ jobs:
           sleep 30
           curl -I "${{ steps.deployment.outputs.page_url }}" || exit 1
           echo "✅ Deployment verified successfully!"
-
-      - name: Create deployment status
-        uses: actions/github-script@v7
-        with:
-          script: |
-            github.rest.repos.createDeploymentStatus({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              deployment_id: context.payload.deployment?.id || 0,
-              state: 'success',
-              environment_url: '${{ steps.deployment.outputs.page_url }}',
-              description: 'Deployment verified and accessible'
-            })
