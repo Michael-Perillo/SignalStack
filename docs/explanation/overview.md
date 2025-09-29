@@ -30,11 +30,23 @@ SignalStack is **not** a job-search automation tool. It doesn't handle interview
 
 SignalStack uses two axes—**Objective vs Interpretive** and **Raw vs Applied**—to create a four-cell matrix. Each cell corresponds to one quadrant:
 
+> For a detailed explanation of the matrix structure, see **[The Matrix](../reference/the-matrix.md)**
+
 |                    | **Objective (Factual)**                    | **Interpretive (Narrative)**               |
 |--------------------|---------------------------------------------|---------------------------------------------|
-| **Raw (Collected)** | [**Facts**](facts.md) *(Seeds & Plants)*   | [**Narratives**](narratives.md) *(Soil & Growth Stories)* |
-| **Applied (Tailored)** | [**Playbooks**](playbooks.md) *(Recipes)*  | [**Signals**](signals.md) *(Dishes Served)* |
+| **Raw (Collected)** | [**Facts**](../reference/facts.md) *(Seeds & Plants)*   | [**Narratives**](../reference/narratives.md) *(Soil & Growth Stories)* |
+| **Applied (Tailored)** | [**Playbooks**](../reference/playbooks.md) *(Recipes)*  | [**Signals**](../reference/signals.md) *(Dishes Served)* |
 
 At the end of each quadrant page you'll see the garden & harvest analogy: **Facts** are the seeds & plants; **Narratives** enrich the soil; **Playbooks** are the recipes; and **Signals** are the dishes served.
 
-For a deeper explanation of each quadrant, follow the links above.
+## Navigation
+
+**Understanding SignalStack:**
+- **[The Matrix](../reference/the-matrix.md)** - Detailed explanation of the four-quadrant framework
+- **[Using SignalStack](using-signalstack.md)** - Strategic guidance and high-level workflows
+
+**Reference Documentation:**
+- **[Facts](../reference/facts.md)** - Objective career data *(Seeds & Plants)*
+- **[Narratives](../reference/narratives.md)** - Interpretive context *(Soil & Growth Stories)*
+- **[Playbooks](../reference/playbooks.md)** - Tailoring rules *(Recipes)*
+- **[Signals](../reference/signals.md)** - Final deliverables *(Dishes Served)*
