@@ -1,30 +1,354 @@
 /**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
+ * SignalStack Custom Styling
+ * Professional data-focused design with garden metaphor elements
  */
 
-/* You can override the default Infima variables here. */
+/* Import better fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+/* SignalStack Brand Colors & Design System */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
-  --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  /* Primary Brand Colors */
+  --ss-primary: #1e3a8a;        /* Deep blue - trust, professionalism */
+  --ss-primary-dark: #1e40af;
+  --ss-primary-darker: #1d4ed8;
+  --ss-primary-darkest: #1e3a8a;
+  --ss-primary-light: #3b82f6;
+  --ss-primary-lighter: #60a5fa;
+  --ss-primary-lightest: #93c5fd;
+
+  /* Secondary Colors */
+  --ss-secondary: #f59e0b;       /* Warm amber - creativity, insights */
+  --ss-secondary-dark: #d97706;
+  --ss-secondary-light: #fbbf24;
+  --ss-secondary-lighter: #fcd34d;
+
+  /* Accent Colors */
+  --ss-accent: #10b981;          /* Sage green - growth, garden metaphor */
+  --ss-accent-dark: #059669;
+  --ss-accent-light: #34d399;
+  --ss-accent-lighter: #6ee7b7;
+
+  /* Neutral Colors */
+  --ss-gray-50: #f8fafc;
+  --ss-gray-100: #f1f5f9;
+  --ss-gray-200: #e2e8f0;
+  --ss-gray-300: #cbd5e1;
+  --ss-gray-400: #94a3b8;
+  --ss-gray-500: #64748b;
+  --ss-gray-600: #475569;
+  --ss-gray-700: #334155;
+  --ss-gray-800: #1e293b;
+  --ss-gray-900: #0f172a;
+
+  /* Semantic Colors */
+  --ss-success: var(--ss-accent);
+  --ss-warning: var(--ss-secondary);
+  --ss-error: #ef4444;
+  --ss-info: var(--ss-primary-light);
+
+  /* Typography */
+  --ss-font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  --ss-font-mono: 'JetBrains Mono', 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace;
+
+  /* Spacing & Layout */
+  --ss-spacing-xs: 0.25rem;
+  --ss-spacing-sm: 0.5rem;
+  --ss-spacing-md: 1rem;
+  --ss-spacing-lg: 1.5rem;
+  --ss-spacing-xl: 2rem;
+  --ss-spacing-2xl: 3rem;
+  --ss-spacing-3xl: 4rem;
+
+  /* Border Radius */
+  --ss-radius-sm: 0.25rem;
+  --ss-radius-md: 0.5rem;
+  --ss-radius-lg: 0.75rem;
+  --ss-radius-xl: 1rem;
+
+  /* Shadows */
+  --ss-shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --ss-shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --ss-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --ss-shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+
+  /* Apply to Docusaurus variables */
+  --ifm-color-primary: var(--ss-primary);
+  --ifm-color-primary-dark: var(--ss-primary-dark);
+  --ifm-color-primary-darker: var(--ss-primary-darker);
+  --ifm-color-primary-darkest: var(--ss-primary-darkest);
+  --ifm-color-primary-light: var(--ss-primary-light);
+  --ifm-color-primary-lighter: var(--ss-primary-lighter);
+  --ifm-color-primary-lightest: var(--ss-primary-lightest);
+
+  --ifm-font-family-base: var(--ss-font-family);
+  --ifm-font-family-monospace: var(--ss-font-mono);
+  --ifm-code-font-size: 0.875rem;
+  --ifm-heading-font-weight: 600;
+
+  --docusaurus-highlighted-code-line-bg: rgba(59, 130, 246, 0.1);
+
+  /* Enhanced navbar */
+  --ifm-navbar-background-color: rgba(255, 255, 255, 0.95);
+  --ifm-navbar-shadow: var(--ss-shadow-sm);
+  --ifm-navbar-height: 4rem;
+  --ifm-navbar-padding-horizontal: var(--ss-spacing-lg);
+
+  /* Enhanced content */
+  --ifm-spacing-horizontal: var(--ss-spacing-lg);
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
+/* Dark theme adjustments */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-color-primary: var(--ss-primary-lighter);
+  --ifm-color-primary-dark: var(--ss-primary-light);
+  --ifm-color-primary-darker: var(--ss-primary);
+  --ifm-color-primary-darkest: var(--ss-primary-dark);
+  --ifm-color-primary-light: #93c5fd;
+  --ifm-color-primary-lighter: #bfdbfe;
+  --ifm-color-primary-lightest: #dbeafe;
+
+  /* Blue-tinted grays for better harmony */
+  --ifm-background-color: #1a202c;
+  --ifm-background-surface-color: #2d3748;
+  --ifm-color-content: #e2e8f0;
+  --ifm-color-content-secondary: #cbd5e1;
+  --ifm-color-emphasis-300: #4a5568;
+  --ifm-color-emphasis-600: #718096;
+  --ifm-color-emphasis-700: #a0aec0;
+  --ifm-color-emphasis-800: #cbd5e1;
+  --ifm-color-emphasis-900: #e2e8f0;
+
+  --docusaurus-highlighted-code-line-bg: rgba(59, 130, 246, 0.15);
+  --ifm-navbar-background-color: rgba(26, 32, 44, 0.95);
+}
+
+/* Global Typography Improvements */
+html {
+  font-family: var(--ss-font-family);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Global Background Gradients */
+body {
+  background: linear-gradient(180deg,
+    var(--ss-gray-50) 0%,
+    rgba(255, 255, 255, 0.95) 50%,
+    rgba(248, 250, 252, 0.8) 100%);
+  min-height: 100vh;
+}
+
+[data-theme='dark'] body {
+  background: linear-gradient(180deg,
+    #1a202c 0%,
+    #1e2530 50%,
+    #1a202c 100%);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+/* Enhanced Code Styling */
+code {
+  font-family: var(--ss-font-mono);
+  font-size: 0.875em;
+  background-color: var(--ss-gray-100);
+  border-radius: var(--ss-radius-sm);
+  padding: 0.125rem 0.25rem;
+}
+
+[data-theme='dark'] code {
+  background-color: rgba(45, 55, 72, 0.8);
+  color: var(--ifm-color-content);
+}
+
+/* Improved Link Styling */
+a {
+  color: var(--ss-primary);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--ss-primary-dark);
+  text-decoration: underline;
+}
+
+/* Enhanced Buttons */
+.button {
+  font-weight: 500;
+  border-radius: var(--ss-radius-md);
+  transition: all 0.2s ease;
+  border: none;
+  font-family: var(--ss-font-family);
+}
+
+.button--primary {
+  background: linear-gradient(135deg, var(--ss-primary) 0%, var(--ss-primary-dark) 100%);
+  color: white;
+}
+
+.button--primary:hover {
+  background: linear-gradient(135deg, var(--ss-primary-dark) 0%, var(--ss-primary-darker) 100%);
+  transform: translateY(-1px);
+  box-shadow: var(--ss-shadow-md);
+}
+
+.button--secondary {
+  background: linear-gradient(135deg, var(--ss-secondary) 0%, var(--ss-secondary-dark) 100%);
+  color: white;
+}
+
+.button--secondary:hover {
+  background: linear-gradient(135deg, var(--ss-secondary-dark) 0%, #b45309 100%);
+  transform: translateY(-1px);
+  box-shadow: var(--ss-shadow-md);
+}
+
+/* Enhanced Navigation */
+.navbar {
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.navbar__brand {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: var(--ss-primary);
+}
+
+[data-theme='dark'] .navbar__brand {
+  color: var(--ss-primary-lighter);
+}
+
+.navbar__link {
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.navbar__link:hover {
+  color: var(--ss-primary);
+}
+
+[data-theme='dark'] .navbar__link {
+  color: var(--ifm-color-content);
+  font-weight: 600;
+}
+
+[data-theme='dark'] .navbar__link:hover {
+  color: var(--ss-primary-lighter);
+}
+
+/* Enhanced Sidebar */
+.menu {
+  background: var(--ss-gray-50);
+}
+
+[data-theme='dark'] .menu {
+  background: rgba(26, 32, 44, 0.8);
+}
+
+.menu__link {
+  border-radius: var(--ss-radius-md);
+  margin: 0.125rem 0;
+  transition: all 0.2s ease;
+}
+
+.menu__link:hover {
+  background: var(--ss-primary-lightest);
+  color: var(--ss-primary-dark);
+}
+
+[data-theme='dark'] .menu__link:hover {
+  background: rgba(45, 55, 72, 0.8);
+  color: var(--ss-primary-lighter);
+}
+
+.menu__link--active {
+  background: var(--ss-primary);
+  color: white;
+}
+
+[data-theme='dark'] .menu__link--active {
+  background: var(--ss-primary-light);
+  color: #1a202c;
+}
+
+/* Enhanced Content */
+.markdown h1 {
+  border-bottom: 2px solid var(--ss-gray-200);
+  padding-bottom: var(--ss-spacing-md);
+}
+
+[data-theme='dark'] .markdown h1 {
+  border-bottom-color: rgba(45, 55, 72, 0.8);
+}
+
+.markdown h2 {
+  color: var(--ss-primary);
+  margin-top: 2rem;
+}
+
+[data-theme='dark'] .markdown h2 {
+  color: var(--ss-primary-lighter);
+}
+
+/* Improved content backgrounds in dark mode */
+[data-theme='dark'] .main-wrapper {
+  background: transparent;
+}
+
+[data-theme='dark'] .theme-doc-sidebar-container {
+  background: rgba(26, 32, 44, 0.6);
+  border-right: 1px solid rgba(45, 55, 72, 0.8);
+}
+
+/* Tables */
+table {
+  border-collapse: collapse;
+  border-radius: var(--ss-radius-md);
+  overflow: hidden;
+  box-shadow: var(--ss-shadow-sm);
+}
+
+th {
+  background: var(--ss-gray-100);
+  color: var(--ss-gray-800);
+  font-weight: 600;
+}
+
+[data-theme='dark'] th {
+  background: var(--ss-gray-800);
+  color: var(--ss-gray-200);
+}
+
+/* Footer */
+.footer {
+  background: var(--ss-gray-900);
+  border-top: 1px solid var(--ss-gray-200);
+}
+
+[data-theme='dark'] .footer {
+  border-top-color: var(--ss-gray-700);
+}
+
+.footer__title {
+  color: var(--ss-primary-lighter);
+  font-weight: 600;
+}
+
+/* Scroll Improvements */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Focus States */
+button:focus,
+a:focus,
+input:focus {
+  outline: 2px solid var(--ss-primary-lighter);
+  outline-offset: 2px;
 }

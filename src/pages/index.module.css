@@ -1,18 +1,93 @@
 /**
- * CSS files with the .module.css suffix will be treated as CSS modules
- * and scoped locally.
+ * SignalStack Homepage Styling
+ * Custom hero section with professional gradient and enhanced typography
  */
 
 .heroBanner {
-  padding: 4rem 0;
+  padding: 4rem 0 5rem 0;
   text-align: center;
   position: relative;
   overflow: hidden;
+  background: linear-gradient(135deg,
+    var(--ss-primary) 0%,
+    var(--ss-primary-dark) 50%,
+    var(--ss-primary-darker) 100%);
+  color: white;
+}
+
+.heroBanner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><g fill="%23ffffff" fill-opacity="0.05"><circle cx="7" cy="7" r="1"/><circle cx="21" cy="7" r="1"/><circle cx="35" cy="7" r="1"/><circle cx="49" cy="7" r="1"/><circle cx="14" cy="21" r="1"/><circle cx="28" cy="21" r="1"/><circle cx="42" cy="21" r="1"/><circle cx="7" cy="35" r="1"/><circle cx="21" cy="35" r="1"/><circle cx="35" cy="35" r="1"/><circle cx="49" cy="35" r="1"/><circle cx="14" cy="49" r="1"/><circle cx="28" cy="49" r="1"/><circle cx="42" cy="49" r="1"/></g></g></svg>') repeat;
+  pointer-events: none;
+}
+
+.heroBanner .container {
+  position: relative;
+  z-index: 1;
+}
+
+.heroBanner h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(135deg, #ffffff 0%, #e2e8f0 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.heroBanner .hero__subtitle {
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.5;
+}
+
+.heroBanner .hero__subtitle:last-of-type {
+  margin-bottom: 2.5rem;
 }
 
 @media screen and (max-width: 996px) {
   .heroBanner {
-    padding: 2rem;
+    padding: 3rem 2rem 4rem 2rem;
+  }
+
+  .heroBanner h1 {
+    font-size: 2.5rem;
+  }
+
+  .heroBanner .hero__subtitle {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .heroBanner h1 {
+    font-size: 2rem;
+  }
+
+  .heroBanner .hero__subtitle {
+    font-size: 1rem;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .buttons .button {
+    width: 100%;
+    max-width: 280px;
   }
 }
 
@@ -20,4 +95,46 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.buttons .button {
+  font-size: 1.1rem;
+  padding: 0.875rem 2rem;
+  font-weight: 600;
+  text-transform: none;
+  letter-spacing: 0.025em;
+  border-radius: var(--ss-radius-lg);
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.1);
+}
+
+.buttons .button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px 0 rgba(0, 0, 0, 0.15);
+}
+
+.buttons .button--secondary {
+  background: rgba(255, 255, 255, 0.95);
+  color: var(--ss-primary);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.buttons .button--secondary:hover {
+  background: white;
+  color: var(--ss-primary-dark);
+  border-color: white;
+}
+
+.buttons .button--outline {
+  background: transparent;
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.buttons .button--outline:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.6);
+  color: white;
 }

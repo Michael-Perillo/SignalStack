@@ -1,11 +1,328 @@
+/* SignalStack Features Section */
 .features {
+  padding: 4rem 0 6rem 0;
+  background: transparent;
+
+  /* Unit-based pyramid geometry system */
+  --pyramid-base-unit: 6rem;
+  --pyramid-level1-top: calc(1 * var(--pyramid-base-unit));
+  --pyramid-level1-bottom: calc(4 * var(--pyramid-base-unit));
+  --pyramid-level2-top: var(--pyramid-level1-bottom);
+  --pyramid-level2-bottom: calc(7 * var(--pyramid-base-unit));
+  --pyramid-level3-top: var(--pyramid-level2-bottom);
+  --pyramid-level3-bottom: calc(10 * var(--pyramid-base-unit));
+  --pyramid-level4-top: var(--pyramid-level3-bottom);
+  --pyramid-level4-bottom: calc(13 * var(--pyramid-base-unit));
+}
+
+.features .container {
+  max-width: 1200px;
+}
+
+/* 4-Level Pyramid Container Layout */
+.pyramidContainer {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  padding: 2rem 0;
+  gap: 1rem;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.pyramidLevel1,
+.pyramidLevel2,
+.pyramidLevel3,
+.pyramidLevel4 {
+  display: flex;
+  justify-content: center;
   width: 100%;
 }
 
-.featureSvg {
-  height: 200px;
-  width: 200px;
+/* Responsive Pyramid Shapes - All styles integrated into feature card classes below */
+
+/* Feature Card Classes for 4-Level Pyramid */
+.featureCardLevel1 {
+  /* Base geometric shape styles */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: all 0.3s ease;
+  background: white;
+  box-shadow: var(--ss-shadow-lg);
+  border: 2px solid var(--ss-gray-200);
+
+  /* Level 1 specific styles */
+  width: var(--pyramid-level1-bottom);
+  height: 8rem;
+  background: linear-gradient(135deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(251, 191, 36, 0.15) 100%);
+  clip-path: polygon(37.5% 0%, 62.5% 0%, 100% 100%, 0% 100%);
+  border: 3px solid var(--ss-secondary);
+  padding: 1.5rem 2rem 1rem 2rem;
+  box-shadow: var(--ss-shadow-xl), 0 0 0 2px rgba(245, 158, 11, 0.3), 0 8px 32px rgba(245, 158, 11, 0.1);
 }
+
+.featureCardLevel1:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: var(--ss-shadow-xl), 0 0 0 3px rgba(245, 158, 11, 0.3);
+  background: linear-gradient(135deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(251, 191, 36, 0.15) 100%);
+}
+
+.featureCardLevel2 {
+  /* Base geometric shape styles */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: all 0.3s ease;
+  background: white;
+  box-shadow: var(--ss-shadow-lg);
+  border: 2px solid var(--ss-gray-200);
+
+  /* Level 2 specific styles */
+  width: var(--pyramid-level2-bottom);
+  height: 8rem;
+  background: linear-gradient(135deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(30, 58, 138, 0.1) 100%);
+  clip-path: polygon(21.43% 0%, 78.57% 0%, 100% 100%, 0% 100%);
+  border: 2px solid var(--ss-primary);
+  padding: 1.5rem 2rem 2rem 2rem;
+  box-shadow: var(--ss-shadow-xl), 0 0 0 1px rgba(30, 58, 138, 0.2), 0 6px 24px rgba(30, 58, 138, 0.08);
+}
+
+.featureCardLevel2:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: var(--ss-shadow-xl), 0 0 0 2px rgba(30, 58, 138, 0.2);
+  background: linear-gradient(135deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(30, 58, 138, 0.1) 100%);
+}
+
+.featureCardLevel3 {
+  /* Base geometric shape styles */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: all 0.3s ease;
+  background: white;
+  box-shadow: var(--ss-shadow-lg);
+  border: 2px solid var(--ss-gray-200);
+
+  /* Level 3 specific styles */
+  width: var(--pyramid-level3-bottom);
+  height: 8rem;
+  background: linear-gradient(135deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(30, 58, 138, 0.1) 100%);
+  clip-path: polygon(15% 0%, 85% 0%, 100% 100%, 0% 100%);
+  border: 2px solid var(--ss-primary);
+  padding: 1.5rem 2rem 2rem 2rem;
+  box-shadow: var(--ss-shadow-xl), 0 0 0 1px rgba(30, 58, 138, 0.2), 0 6px 24px rgba(30, 58, 138, 0.08);
+}
+
+.featureCardLevel3:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: var(--ss-shadow-xl), 0 0 0 2px rgba(30, 58, 138, 0.2);
+  background: linear-gradient(135deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(30, 58, 138, 0.1) 100%);
+}
+
+.featureCardLevel4 {
+  /* Base geometric shape styles */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: all 0.3s ease;
+  background: white;
+  box-shadow: var(--ss-shadow-lg);
+  border: 2px solid var(--ss-gray-200);
+
+  /* Level 4 specific styles */
+  width: var(--pyramid-level4-bottom);
+  height: 8rem;
+  background: linear-gradient(135deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(16, 185, 129, 0.1) 100%);
+  clip-path: polygon(11.54% 0%, 88.46% 0%, 100% 100%, 0% 100%);
+  border: 2px solid var(--ss-accent);
+  padding: 1.5rem 2.5rem 2rem 2.5rem;
+  box-shadow: var(--ss-shadow-xl), 0 0 0 1px rgba(16, 185, 129, 0.2), 0 6px 24px rgba(16, 185, 129, 0.08);
+}
+
+.featureCardLevel4:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: var(--ss-shadow-xl), 0 0 0 2px rgba(16, 185, 129, 0.2);
+  background: linear-gradient(135deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(16, 185, 129, 0.1) 100%);
+}
+
+/* Dark Theme for 4-Level Pyramid */
+[data-theme='dark'] .featureCardLevel1 {
+  background: linear-gradient(135deg,
+      var(--ss-gray-800) 0%,
+      rgba(245, 158, 11, 0.1) 100%) !important;
+  border-color: var(--ss-secondary);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme='dark'] .featureCardLevel1:hover {
+  background: linear-gradient(135deg,
+      var(--ss-gray-800) 0%,
+      rgba(245, 158, 11, 0.15) 100%) !important;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.4), 0 10px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+[data-theme='dark'] .featureCardLevel2,
+[data-theme='dark'] .featureCardLevel3 {
+  background: linear-gradient(135deg,
+      var(--ss-gray-800) 0%,
+      rgba(30, 58, 138, 0.1) 100%) !important;
+  border-color: var(--ss-primary-light);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme='dark'] .featureCardLevel2:hover,
+[data-theme='dark'] .featureCardLevel3:hover {
+  background: linear-gradient(135deg,
+      var(--ss-gray-800) 0%,
+      rgba(30, 58, 138, 0.15) 100%) !important;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.4), 0 10px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+[data-theme='dark'] .featureCardLevel4 {
+  background: linear-gradient(135deg,
+      var(--ss-gray-800) 0%,
+      rgba(16, 185, 129, 0.1) 100%) !important;
+  border-color: var(--ss-accent);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme='dark'] .featureCardLevel4:hover {
+  background: linear-gradient(135deg,
+      var(--ss-gray-800) 0%,
+      rgba(16, 185, 129, 0.15) 100%) !important;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.4), 0 10px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Background SVG Styling */
+.backgroundSvg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 95%;
+  height: 95%;
+  opacity: 0.2;
+  z-index: 0;
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+/* Text Overlay System */
+.textOverlay {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+  padding-top: 0.75rem;
+}
+
+/* Hover Description Animation - Simplified */
+.hoverDescription {
+  opacity: 0;
+  transform: translateY(1rem);
+  transition: all 0.3s ease;
+  margin-top: 0.5rem;
+  color: var(--ss-gray-600);
+  line-height: 1.4;
+  text-align: center;
+  margin-bottom: 0;
+  font-size: clamp(0.75rem, 1.8vw, 0.9rem);
+  max-width: 90%;
+}
+
+.featureCardLevel1:hover .hoverDescription,
+.featureCardLevel2:hover .hoverDescription,
+.featureCardLevel3:hover .hoverDescription,
+.featureCardLevel4:hover .hoverDescription {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+[data-theme='dark'] .hoverDescription {
+  color: var(--ss-gray-300);
+}
+
+/* Background SVG hover effects */
+.featureCardLevel1:hover .backgroundSvg,
+.featureCardLevel2:hover .backgroundSvg,
+.featureCardLevel3:hover .backgroundSvg,
+.featureCardLevel4:hover .backgroundSvg {
+  opacity: 0.15;
+  filter: blur(2px);
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+/* Typography for Text Overlay System */
+.textOverlay h3 {
+  font-size: clamp(1.1rem, 2.8vw, 1.4rem);
+  font-weight: 600;
+  margin-bottom: 0;
+  color: var(--ss-gray-900);
+  text-align: center;
+  line-height: 1.2;
+  transition: all 0.3s ease;
+  opacity: 0;
+  transform: translateY(1rem);
+}
+
+.featureCardLevel1 .textOverlay h3 {
+  font-size: clamp(1.2rem, 3.2vw, 1.6rem);
+}
+
+[data-theme='dark'] .textOverlay h3 {
+  color: var(--ss-gray-100);
+}
+
+/* Level-specific text positioning for narrow top shape */
+.featureCardLevel1 .textOverlay {
+  justify-content: flex-start;
+  padding-top: 0.25rem;
+}
+
+
+/* Title and description reveal on hover */
+.featureCardLevel1:hover .textOverlay h3,
+.featureCardLevel2:hover .textOverlay h3,
+.featureCardLevel3:hover .textOverlay h3,
+.featureCardLevel4:hover .textOverlay h3 {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Natural responsive scaling - no breakpoints needed */
