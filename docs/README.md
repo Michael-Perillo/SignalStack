@@ -2,7 +2,8 @@
 
 SignalStack is a framework for managing career data across time using a systematic four-quadrant approach.
 
-Instead of flattening your rich professional history into a single static resume, SignalStack helps you maintain, organize, and strategically deploy your career information.
+Instead of flattening your rich professional history into a single static resume, SignalStack helps you
+maintain, organize, and strategically deploy your career information.
 
 ## Get Started
 
@@ -17,4 +18,5 @@ Instead of flattening your rich professional history into a single static resume
 
 ---
 
-*This documentation follows the [Diátaxis framework](https://diataxis.fr/) and is organized by purpose in the sidebar.*
+*This documentation follows (and was heavily inspired by) the [Diátaxis framework](https://diataxis.fr/) and*
+*is organized by purpose in the sidebar.*

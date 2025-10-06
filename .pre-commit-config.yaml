@@ -1,30 +1,29 @@
 repos:
+  - repo: https://github.com/igorshubovych/markdownlint-cli
+    rev: v0.45.0
+    hooks:
+      - id: markdownlint
+        files: '^docs/.*\.md$'
+
+  - repo: https://github.com/tcort/markdown-link-check
+    rev: v3.13.7
+    hooks:
+      - id: markdown-link-check
+        args: ['--config', '.markdown-link-check.json']
+        files: '^docs/.*\.md$'
+
   - repo: local
     hooks:
       - id: typescript-check
         name: TypeScript Check
-        entry: npm run typecheck
-        language: system
+        entry: npx tsc
+        language: node
         files: '\.(ts|tsx|js|jsx)$'
-        pass_filenames: false
-
-      - id: markdown-lint
-        name: Markdown Lint
-        entry: npm run lint:md
-        language: system
-        files: '\.md$'
-        pass_filenames: false
-
-      - id: link-check
-        name: Link Check
-        entry: npm run test:links
-        language: system
-        files: '\.md$'
         pass_filenames: false
 
       - id: build-check
         name: Build Check
-        entry: npm run build
-        language: system
+        entry: npx docusaurus build
+        language: node
         files: '(src/|docs/|docusaurus\.config\.ts|sidebars\.ts|package\.json)'
         pass_filenames: false
