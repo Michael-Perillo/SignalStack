@@ -1,4 +1,4 @@
-# Playbooks *(Recipes)*
+# Playbooks
 
 ## Definition
 

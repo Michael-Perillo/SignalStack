@@ -4,8 +4,8 @@ SignalStack uses two orthogonal axes—**Objective ↔ Interpretive** and **Raw 
 
 |                    | **Objective (Factual)**                                          | **Interpretive (Narrative)**                                           |
 |--------------------|-------------------------------------------------------------------|-------------------------------------------------------------------------|
-| **Raw (Collected)** | **Facts** *(Seeds & Plants)*: job titles, dates, metrics, skills, education | **Narratives** *(Soil & Growth Stories)*: case studies, STAR stories, lessons learned |
-| **Applied (Tailored)** | **Playbooks** *(Recipes)*: rules and filters for tailoring facts to a role (keywords, recency, metrics) | **Signals** *(Dishes Served)*: final outputs such as resumes, CVs, portfolio pages, cover letters |
+| **Raw (Collected)** | **Facts**: job titles, dates, metrics, skills, education | **Narratives**: case studies, STAR stories, lessons learned |
+| **Applied (Tailored)** | **Playbooks**: rules and filters for tailoring facts to a role (keywords, recency, metrics) | **Signals**: final outputs such as resumes, CVs, portfolio pages, cover letters |
 
 ## Example: How Education Crosses the Matrix
 

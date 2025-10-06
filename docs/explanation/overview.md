@@ -38,11 +38,15 @@ SignalStack uses two axes—**Objective vs Interpretive** and **Raw vs Applied**
 
 |                    | **Objective (Factual)**                    | **Interpretive (Narrative)**               |
 |--------------------|---------------------------------------------|---------------------------------------------|
-| **Raw (Collected)** | [**Facts**](../reference/facts.md) *(Seeds & Plants)*   | [**Narratives**](../reference/narratives.md) *(Soil & Growth Stories)* |
-| **Applied (Tailored)** | [**Playbooks**](../reference/playbooks.md) *(Recipes)*  | [**Signals**](../reference/signals.md) *(Dishes Served)* |
+| **Raw (Collected)** | [**Facts**](../reference/facts.md)   | [**Narratives**](../reference/narratives.md) |
+| **Applied (Tailored)** | [**Playbooks**](../reference/playbooks.md) | [**Signals**](../reference/signals.md) |
 
-At the end of each quadrant page you'll see the garden & harvest analogy: **Facts** are the seeds & plants; **Narratives** enrich the soil;
-**Playbooks** are the recipes; and **Signals** are the dishes served.
+At the end of each quadrant page you'll see the garden & harvest analogy:
+
+- **Facts** are the seeds & plants
+- **Narratives** enrich the soil
+- **Playbooks** are the recipes  
+- **Signals** are the dishes served
 
 ## Navigation
 

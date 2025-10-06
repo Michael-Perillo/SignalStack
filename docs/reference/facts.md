@@ -1,4 +1,4 @@
-# Facts *(Seeds & Plants)*
+# Facts
 
 ## Definition
 

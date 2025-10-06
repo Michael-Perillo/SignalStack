@@ -1,18 +1,15 @@
 /* SignalStack Features Section */
 .features {
-  padding: 4rem 0 6rem 0;
+  padding: 2rem 0 3rem 0;
   background: transparent;
 
-  /* Unit-based pyramid geometry system */
-  --pyramid-base-unit: 6rem;
-  --pyramid-level1-top: calc(1 * var(--pyramid-base-unit));
-  --pyramid-level1-bottom: calc(4 * var(--pyramid-base-unit));
-  --pyramid-level2-top: var(--pyramid-level1-bottom);
-  --pyramid-level2-bottom: calc(7 * var(--pyramid-base-unit));
-  --pyramid-level3-top: var(--pyramid-level2-bottom);
-  --pyramid-level3-bottom: calc(10 * var(--pyramid-base-unit));
-  --pyramid-level4-top: var(--pyramid-level3-bottom);
-  --pyramid-level4-bottom: calc(13 * var(--pyramid-base-unit));
+  /* Bottom-layer-driven responsive pyramid geometry system */
+  --pyramid-base-unit: calc(min(90vw, 1200px) / 13);
+  --pyramid-height-unit: calc(1.8 * var(--pyramid-base-unit));
+  --pyramid-level4-width: calc(13 * var(--pyramid-base-unit));
+  --pyramid-level3-width: calc(10 * var(--pyramid-base-unit));
+  --pyramid-level2-width: calc(7 * var(--pyramid-base-unit));
+  --pyramid-level1-width: calc(4 * var(--pyramid-base-unit));
 }
 
 .features .container {
@@ -56,8 +53,8 @@
   border: 2px solid var(--ss-gray-200);
 
   /* Level 1 specific styles */
-  width: var(--pyramid-level1-bottom);
-  height: 8rem;
+  width: var(--pyramid-level1-width);
+  height: var(--pyramid-height-unit);
   background: linear-gradient(135deg,
       rgba(255, 255, 255, 1) 0%,
       rgba(251, 191, 36, 0.15) 100%);
@@ -89,8 +86,8 @@
   border: 2px solid var(--ss-gray-200);
 
   /* Level 2 specific styles */
-  width: var(--pyramid-level2-bottom);
-  height: 8rem;
+  width: var(--pyramid-level2-width);
+  height: var(--pyramid-height-unit);
   background: linear-gradient(135deg,
       rgba(255, 255, 255, 1) 0%,
       rgba(30, 58, 138, 0.1) 100%);
@@ -122,8 +119,8 @@
   border: 2px solid var(--ss-gray-200);
 
   /* Level 3 specific styles */
-  width: var(--pyramid-level3-bottom);
-  height: 8rem;
+  width: var(--pyramid-level3-width);
+  height: var(--pyramid-height-unit);
   background: linear-gradient(135deg,
       rgba(255, 255, 255, 1) 0%,
       rgba(30, 58, 138, 0.1) 100%);
@@ -155,8 +152,8 @@
   border: 2px solid var(--ss-gray-200);
 
   /* Level 4 specific styles */
-  width: var(--pyramid-level4-bottom);
-  height: 8rem;
+  width: var(--pyramid-level4-width);
+  height: var(--pyramid-height-unit);
   background: linear-gradient(135deg,
       rgba(255, 255, 255, 1) 0%,
       rgba(16, 185, 129, 0.1) 100%);
@@ -262,7 +259,7 @@
   line-height: 1.4;
   text-align: center;
   margin-bottom: 0;
-  font-size: clamp(0.75rem, 1.8vw, 0.9rem);
+  font-size: clamp(0.75rem, calc(0.7rem + 1vw), 0.9rem);
   max-width: 90%;
 }
 
@@ -290,7 +287,7 @@
 
 /* Typography for Text Overlay System */
 .textOverlay h3 {
-  font-size: clamp(1.1rem, 2.8vw, 1.4rem);
+  font-size: clamp(1rem, calc(0.8rem + 1.5vw), 1.4rem);
   font-weight: 600;
   margin-bottom: 0;
   color: var(--ss-gray-900);
@@ -302,7 +299,7 @@
 }
 
 .featureCardLevel1 .textOverlay h3 {
-  font-size: clamp(1.2rem, 3.2vw, 1.6rem);
+  font-size: clamp(1.1rem, calc(0.9rem + 1.8vw), 1.6rem);
 }
 
 [data-theme='dark'] .textOverlay h3 {
@@ -325,4 +322,43 @@
   transform: translateY(0);
 }
 
-/* Natural responsive scaling - no breakpoints needed */
+/* Mobile responsive breakpoint - rectangular cards when top layer gets too small */
+/* When Level 1 (4 units) drops below 200px: (200px / 4) * 13 = 650px total */
+@media screen and (max-width: 650px) {
+  .features {
+    --pyramid-base-unit: 100%;
+    --pyramid-height-unit: 6rem;
+  }
+
+  .pyramidContainer {
+    gap: 1.5rem;
+  }
+
+  .featureCardLevel1,
+  .featureCardLevel2,
+  .featureCardLevel3,
+  .featureCardLevel4 {
+    width: 100%;
+    max-width: 400px;
+    clip-path: none;
+    border-radius: var(--ss-radius-lg);
+    padding: 2rem;
+  }
+
+  .featureCardLevel1 .textOverlay {
+    justify-content: center;
+    padding-top: 1rem;
+  }
+
+  /* Show titles immediately on mobile, hide descriptions */
+  .textOverlay h3 {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+  }
+
+  .hoverDescription {
+    display: none;
+  }
+}
+
+/* Natural responsive scaling above mobile breakpoint */

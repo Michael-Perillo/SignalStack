@@ -1,4 +1,4 @@
-# Narratives *(Soil & Growth Stories)*
+# Narratives
 
 ## Definition
 

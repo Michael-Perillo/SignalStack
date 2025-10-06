@@ -31,17 +31,17 @@ function HomepageHeader() {
 
 function PyramidSection() {
   return (
-    <section style={{ padding: '2rem 0', textAlign: 'center' }}>
+    <section style={{ padding: '1rem 0', textAlign: 'center' }}>
       <div className="container">
         <HomepageFeatures />
-        <div style={{ marginTop: '3rem' }}>
+        <div style={{ marginTop: '1rem' }}>
           <p style={{
             fontSize: '1.3rem',
             fontWeight: '500',
             color: 'var(--ifm-color-primary)',
-            marginBottom: '2rem',
+            marginBottom: '1.5rem',
             maxWidth: '800px',
-            margin: '0 auto 2rem auto'
+            margin: '0 auto 1.5rem auto'
           }}>
             Stop flattening your rich career history into static resumes.<br />
             <span style={{ color: 'var(--ifm-color-emphasis-700)' }}>

@@ -1,4 +1,4 @@
-# Signals *(Dishes Served)*
+# Signals
 
 ## Definition
 
